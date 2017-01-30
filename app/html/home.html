@@ -1,0 +1,34 @@
+<header class="jumbotron">
+    <h1 class="title">My Note App</h1>
+</header>
+<section class="content">
+    <div class="panel panel-primary">
+        <div class="panel-heading panel-font">List of Notes</div>
+        <div class="panel-body">
+            <input class="roundedCorner" type="text" name="search" placeholder="Search.." ng-model="query">
+            <span ng-if="notes.length==0"><b>Click on Add button to add a note</b></span>
+            <a class="btn btn-info" href="#/newNote"> Add </a>
+            <br>
+            <br>
+            <ul class="list">
+                <li ng-repeat="note in notes | filter:query">
+                    <a href="#/note/{{note._id}}" >
+                        <strong>{{ note.title}}</strong>
+                    </a>
+                    <br>
+                    <span class="ellipsis">{{note.text.substring(0, 75)}}</span>
+                    <span ng-if="note.text.length>75">...</span>
+                    <a class="btn btn-info" ng-click="delete(note)">Delete</a>
+                    <a class="btn btn-info" href="#/note/{{note._id}}"> Edit </a>
+                    <br>
+                    <br>
+
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+
+</section>
+

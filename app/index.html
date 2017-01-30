@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Sets the character set of the page -->
+    <meta charset="UTF-8">
+    <!-- Sets initial viewport load  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Note Taking App</title>
+    <!-- Include css files -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/lib/bootstrap-colorpicker.min.css">
+    <link rel="stylesheet" href="styles/lib/angularjs-color-picker.min.css">
+    <link rel="stylesheet" href="styles/lib/angularjs-color-picker-bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body class="mainBody" ng-app="NoteTakingApp">
+    <div ng-view=""/>
+
+    <!-- Include required library script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="lib/bootstrap-colorpicker.min.js"></script>
+    <script src="lib/tinycolor-min.js"></script>
+    <script src="lib/angularjs-color-picker.min.js"></script>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/NoteAppController.js"></script>
+    <script src="scripts/controllers/NoteAddController.js"></script>
+    <script src="scripts/controllers/NoteEditController.js"></script>
+    <script src="scripts/services/NoteFactory.js"></script>
+    <script src="scripts/controllers/NoteAppController.js"></script>
+
+</body>
+</html>

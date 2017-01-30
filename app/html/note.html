@@ -1,0 +1,28 @@
+<header class="jumbotron">
+    <h1 class="title">My Note App</h1>
+</header>
+
+<section class="content">
+    <div class="panel panel-primary">
+        <div class="panel-heading panel-font">{{addEditText}} a Note
+            <a id="homeButton" class="home-btn-info" href="#/"> Home </a>
+        </div>
+        <div class="panel-body">
+            <form>
+                <input class="roundedCorner" type="text" ng-model="title" placeholder="Title" ></input>
+                <br><br>
+                <textarea class="roundedCorner" rows="15" cols="50" ng-model="text" placeholder="Note ..."
+                          style="background-color:{{color}}"></textarea>
+                <br><br>
+                <p><b>Choose the color of your note</b></p>
+                <color-picker id="colorpicker" ng-model="color" options="options"></color-picker>
+
+                <a id= "doneButton" class="btn btn-info"  ng-click="done()"> Done </a>
+
+            </form>
+
+        </div>
+    </div>
+
+</section>
+
