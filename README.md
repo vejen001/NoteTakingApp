@@ -21,7 +21,7 @@ __Node.js server__
 
 __Serve the angular app__
 + run "npm install serve -g" to serve your app(use sudo if needed)
-+ run "serve" to see what port you are serving the web page
++ run "serve" on the NoteTakingApp dir to see what port you are serving the web page
 + open web page http://localhost:PORTNUMBER/app to see the app running
 
 If needed run the following command to open the mongo shell in a different terminal
