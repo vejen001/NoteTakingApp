@@ -29,15 +29,6 @@ input[type=text]:focus {
     width: 50%;
 }
 
-.ellipsis {
-    margin-left: 20px;
-    text-overflow: ellipsis;
-
-    /* Required for text-overflow to do anything */
-    white-space: nowrap;
-    overflow: hidden;
-}
-
 .btn {
     background-color: #337ab7;
     float:  right;
@@ -45,6 +36,11 @@ input[type=text]:focus {
 
 .roundedCorner {
     border-radius: 5px;
+}
+
+.myTextArea {
+    height:20em;
+    width:30em
 }
 
 .panel-heading.panel-font {
@@ -60,6 +56,7 @@ input[type=text]:focus {
     border-style: solid; border-width: 2px;
     border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight;
 }
+
 .home-btn-info:active {
     border-color: ButtonShadow ButtonHighlight ButtonHighlight ButtonShadow;
 }
@@ -67,14 +64,68 @@ input[type=text]:focus {
 ::-webkit-input-placeholder { /* Chrome */
     color: grey;
 }
+
 :-ms-input-placeholder { /* IE 10+ */
     color: grey;
 }
+
 ::-moz-placeholder { /* Firefox 19+ */
     color: grey;
     opacity: 1;
 }
+
 :-moz-placeholder { /* Firefox 4 - 18 */
     color: grey;
     opacity: 1;
+}
+
+.wordWrap {
+    word-wrap: break-word;
+    width: 14em;
+    height: 14em;
+
+}
+
+ul,li{
+    list-style:none;
+}
+
+ul{
+    overflow:hidden;
+    padding:0;
+}
+
+ul li .stickyNote{
+    text-decoration:none;
+    color:#000;
+    background:#ffc;
+    display:block;
+    height:15em;
+    width:15em;
+    padding:1em;
+    -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+    -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    -moz-transition:-moz-transform .15s linear;
+    -o-transition:-o-transform .15s linear;
+    -webkit-transition:-webkit-transform .15s linear;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+ul li{
+    margin:1em;
+    float:left;
+}
+
+ul li h2{
+    font-size:140%;
+    font-weight:bold;
+    padding-bottom:10px;
+}
+
+ul li p{
+    font-family:arial,sans-serif;
 }

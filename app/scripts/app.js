@@ -5,7 +5,7 @@ var myApp = angular.module('NoteTakingApp', ['ngRoute', 'color.picker'])
   .constant("AppConstants", {
     "api": "http://localhost:3000"
   })
-  .config(['$routeProvider', '$httpProvider', function($routeProvider, $httpProvider) {
+  .config(['$routeProvider', '$httpProvider', function($routeProvider) {
     $routeProvider
       .when("/", {
         templateUrl: 'html/home.html',
